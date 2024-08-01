@@ -1,0 +1,697 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+	font-size: 62.5%;
+	height: 100%;
+}
+
+body {
+    font-size: 1.6rem;
+	line-height: 1.5;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    font-family: Poppins;
+    position: relative;
+    .main {
+        width: 100%;
+        max-width: 100%;
+        
+                header {
+        
+                    .box {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        padding: 50px 0;
+        
+                        .left {
+                            display: flex;
+                            align-items: center;
+                            justify-content: left;
+                            gap: 10px;
+        
+                            h1 {
+                                color: #58A9A5;
+                                font-family: Poppins;
+                                font-size: 30px;
+                                font-style: normal;
+                                font-weight: 800;
+                                line-height: normal;
+                            }
+                        }
+        
+                        .center {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+        
+                            nav {
+                                display: flex;
+                                gap: 70px;
+                                align-items: center;
+        
+                                a {
+                                    color: #404242;
+                                    font-family: Poppins;
+                                    font-size: 18px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: normal;
+                                    text-decoration: none;
+                                }
+        
+                                a:focus {
+                                    color: #58A9A5;
+                                    font-family: Poppins;
+                                    font-size: 20px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: normal;
+                                    text-decoration: underline #FEC62D 3px;
+                                }
+        
+        
+                            }
+                        }
+        
+                        .right {
+        
+                            button {
+                                width: 231px;
+                                height: 60px;
+                                flex-shrink: 0;
+                                border-radius: 15px;
+                                background: #58A9A5;
+                                color: #FFF;
+                                font-family: Poppins;
+                                font-size: 20px;
+                                font-style: normal;
+                                border-style: none;
+                                transition: all .5s ease;
+                                cursor: pointer;
+                                font-weight: 500;
+                                line-height: normal;
+                                outline: none;
+                            }
+        
+                            button:hover {
+                                background: #42807c;
+                            }
+                        }
+                    }
+                }
+
+        .container {
+            margin: 0 auto;
+            width: 170vh;
+            max-width: 100%;
+            padding: 0 20px;
+        }
+
+
+        .inspiration {
+            &__box {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                gap: 50px;
+                max-width: 100%;
+                align-items: center;
+                padding: 50px 0;
+            }
+
+            &__elem2 {
+                max-width: 100%;
+                width: 100%;
+
+                div {
+                    background: #CCF0E6;
+                    border-radius: 40% 20% / 20% 40%;
+                    flex-shrink: 0;
+                    display: flex;
+                    align-items: center;
+                    max-width: 100%;
+
+                    img {
+                        width: 600px;
+                        max-width: 100%;
+                    }
+                }
+            }
+
+            &__elem1 {
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+
+                h1 {
+                    color: #1C2323;
+                    font-family: Poppins;
+                    font-size: 60px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: normal;
+                }
+
+                p {
+                    color: #404242;
+                    font-family: Poppins;
+                    font-size: 25px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+
+                button {
+                    width: 221px;
+                    border-style: none;
+                    height: 60px;
+                    flex-shrink: 0;
+                    border-radius: 20px 20px 20px 0px;
+                    background: #58A9A5;
+                    color: #FFF;
+                    font-family: Poppins;
+                    font-size: 25px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    transition: all .5s ease;
+                }
+
+                button:hover {
+                    background: #42807c;
+
+                }
+            }
+        }
+
+        .works {
+
+            &__box {
+                padding: 100px 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-size: 100%;
+                gap: 20px;
+                max-width: 100%;
+
+                h1 {
+                    color: #1C2323;
+                    text-align: center;
+                    font-family: Poppins;
+                    font-size: 60px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: normal;
+                }
+
+                .work {
+                    width: 300px;
+                    color: #404242;
+                    text-align: center;
+                    font-family: Poppins;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    padding-bottom: 40px;
+                }
+
+                .box__video {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+
+                    img {
+                        width: 100%;
+                        max-width: 100%;
+                        height: 100%;
+                    }
+
+                    div {
+                        width: 100%;
+                        max-width: 100%;
+                        flex-shrink: 0;
+                        border-radius: 0px 10px 10px 0px;
+                        background: #CCF0E6;
+                        display: flex;
+                        gap: 20px;
+                        flex-direction: column;
+                        align-items: last baseline;
+                        padding: 100px;
+
+                        p:nth-child(1) {
+                            color: #486958;
+                            font-family: Poppins;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                        }
+
+                        P:nth-child(2) {
+                            color: #486958;
+                            font-family: Poppins;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                        }
+                    }
+
+                }
+            }
+
+            .miss__box {
+                display: flex;
+                justify-content: space-between;
+                gap: 70px;
+                padding: 50px 0;
+                max-width: 100%;
+                width: 100%;
+
+                img {
+                    width: 600px;
+                }
+
+                .text {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+
+                    p:nth-child(1) {
+
+                        color: #1C2323;
+                        font-family: Poppins;
+                        font-size: 40px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+
+                    p:nth-child(2) {
+                        color: #486958;
+                        font-family: Poppins;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                    }
+                }
+            }
+        }
+
+        .our-project {
+            &__box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 100px 0;
+                gap: 40px;
+
+                .box {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    width: 100%;
+                    max-width: 100%;
+                    align-items: center;
+                    grid-gap: 100px;
+
+                    .elem1 {
+                        max-width: 100%;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 20px;
+
+                        p:nth-child(1) {
+                            color: #58A9A5;
+                            font-family: Poppins;
+                            font-size: 35px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                        }
+
+                        p:nth-child(2) {
+                            color: #486958;
+                            font-family: Poppins;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                        }
+
+                        img {
+                            max-width: 100%;
+                            flex-shrink: 0;
+                            border-radius: 0px 0px 225px 225px;
+                        }
+                    }
+
+                    .elem2 {
+                        max-width: 100%;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 20px;
+
+                        p:nth-child(2) {
+                            color: #58A9A5;
+                            font-family: Poppins;
+                            font-size: 35px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                        }
+
+                        p:nth-child(3) {
+                            color: #486958;
+                            font-family: Poppins;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                        }
+
+                        img {
+                            max-width: 100%;
+                        }
+                    }
+
+                    .elem3 {
+                        max-width: 100%;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 20px;
+
+                        p:nth-child(1) {
+                            color: #58A9A5;
+                            font-family: Poppins;
+                            font-size: 35px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                        }
+
+                        p:nth-child(2) {
+                            color: #486958;
+                            font-family: Poppins;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                        }
+
+                        img {
+                            width: 100%;
+                            max-width: 100%;
+                        }
+                    }
+                }
+
+                h1 {
+                    color: #1C2323;
+                    text-align: center;
+                    font-family: Poppins;
+                    font-size: 60px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: normal;
+                }
+
+                .descr {
+                    color: #404242;
+                    text-align: center;
+                    font-family: Poppins;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+
+                .lines {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 7px;
+
+                    .line {
+                        width: 135px;
+                        height: 5px;
+                        flex-shrink: 0;
+                        background: #58A9A5;
+                    }
+                }
+
+            }
+        }
+
+        .test {
+            &__box {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                align-items: center;
+                width: 100%;
+                max-width: 100%;
+                padding: 50px 0;
+
+                h1 {
+                    color: #1C2323;
+                    text-align: center;
+                    font-family: Poppins;
+                    font-size: 60px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: normal;
+                }
+
+                .imgs {
+                    display: flex;
+                    align-items: center;
+                    gap: 100px;
+
+                    img {
+                        width: 200px;
+                        background-size: 100%;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .rectangle {
+
+            &__box {
+                display: flex;
+                justify-content: space-between;
+                max-width: 100%;
+                width: 100%;
+                height: 100%;
+                max-height: 100%;
+                img {
+                    object-fit: cover;
+                    width: 500px;
+                    height: 100%;
+                    max-height: 100%;
+                }
+            }
+
+
+
+            &__elem2 {
+                max-width: 100%;
+                background: #CCF0E6;
+                padding: 50px 0;
+                display: flex;
+                flex-direction: column;
+                gap: 150px;
+                max-height: 100%;
+
+                .ex {
+                    padding: 0 50px;    
+                    max-width: 100%;
+                    display: flex;
+                    width: 100%;
+                    gap: 10px;
+                    justify-content: space-between;
+
+                    h1 {
+                        color: rgb(88, 169, 165);
+                        font-family: Poppins;
+                        font-size: 50px;
+                        font-style: normal;
+                        font-weight: 900;
+                        line-height: normal;
+                    }
+
+                    p {
+                        width: 180px;
+                        color: #58a9a5;
+                        font-family: Poppins;
+                        font-size: 25px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
+                }
+
+                .context {
+                    padding: 0 50px;
+                    max-width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    width: 100%;
+                    p {
+                        color: rgb(72, 105, 88);
+                        font-family: Poppins;
+                        font-size: 25px;
+                        width: 90%;
+                        font-weight: 500;
+                        line-height: normal;
+                    }
+                }
+
+                label {
+                    color: #58A9A5;
+                    font-family: Poppins;
+                    font-size: 19px;
+                    font-style: italic;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+            }
+        }
+
+        .contact-us {
+            &__box {
+                width: 100%;
+                max-width: 100%;
+                padding: 200px 0 100px;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                gap: 100px;
+
+                .text {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    align-items: last baseline;
+
+                    h1 {
+                        color: #1C2323;
+                        text-align: center;
+                        font-family: Poppins;
+                        font-size: 60px;
+                        font-style: normal;
+                        font-weight: 800;
+                        line-height: normal;
+                    }
+
+                    p {
+                        color: #486958;
+                        font-family: Poppins;
+                        font-size: 25px;
+                        width: 400px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+
+                    }
+
+                    div {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        .line {
+                            width: 150px;
+                            height: 5px;
+                            background: #58A9A5;
+                        }
+                    }
+
+                }
+
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    gap: 30px;
+                    border: 1px solid #486958;
+                    padding: 50px;
+
+
+                    input {
+                        color: #486958;
+                        font-family: Poppins;
+                        font-size: 25px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        border: none;
+                        outline: none;
+                    }
+                    
+                    textarea {
+                        color: #486958;
+                        font-family: Poppins;
+                        font-size: 25px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        border: none;
+                        outline: none;
+                        resize: none;
+                    }
+
+                    .line {
+                        width: 100%;
+                        max-width: 100%;
+                        height: 1px;
+                        background-color: #1C2323
+                    }
+
+                    .btn {
+                        display: flex;
+                        justify-content: right;
+
+                        button {
+                            width: 221px;
+                            height: 60px;
+                            flex-shrink: 0;
+                            border-radius: 20px 20px 20px 0px;
+                            background: #58A9A5;
+                            color: #FFF;
+                            font-size: 25px;
+                            font-weight: 700;
+                            border-style: none;
+                            transition: all .5s ease;
+                            cursor: pointer;
+                        }
+
+                        button:hover {
+                            background: #42807c;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
